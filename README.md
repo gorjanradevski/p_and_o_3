@@ -1,5 +1,5 @@
 # P&O3 Python and image processing guidelines
-The purpose of this project/tutorial is to help you get going with Python and image processing done in Python.
+The purpose of these guidelines is to help you get going with Python and image processing.
 
 ## Prerequisites
 
@@ -14,20 +14,21 @@ The purpose of this project/tutorial is to help you get going with Python and im
 
 ## Notebooks
 
-The Jupyter notebook `tutorial_python_image_processing.ipynb` gives you a brief overview of Python and image processing done in Python accordingly. To run `Jupyter`, from inside your virtual environment run `jupyter notebook`. This will open `Jupyter` in your browser and from there you can open the notebooks.
+The Jupyter notebook `python_image_processing.ipynb` in the `notebooks/` directory gives you a brief overview of Python and image processing. To run the notebook, from inside your virtual environment run `jupyter notebook`. This will open `Jupyter` in your browser and from there you can navigate to the `notebooks/` directory and open the `python_image_processing.ipynb` notebook.
 
 
 ## Final remarks
 
 
-For any questions, or if you have things that you think are missing, feel free to reach out to me on
+For any questions, or if you feel that something is not properly explained, feel free to reach out to me on
 [gorjan.radevski@esat.kuleuven.be](mailto:gorjan.radevski@esat.kuleuven.be). For those interested, the sections below go through some Python practices that I try to stick to when working on my projects.
 
 
 ### Folder structure
-Python files that are in the top most level in the sources directory are treated as scripts (should implement a `__main__` method) and can be run (using `python script1.py`). All other python files that are further down in the sources directory should be packed as packages and imported in the scripts as modules. An example is presented below.
+Python files that reside at the top-most level in the sources directory `src/` are treated as scripts (should implement a `__main__` method) and can be executed (e.g `python script.py`). All other Python files that are further down in the sources directory should be packed as packages and imported in the scripts as modules. An example is presented below.
 
 ```
+data/
 notebooks/
 src/
  |
@@ -43,7 +44,7 @@ src/
 ```
 
 ### Docstrings and static typing
-Improved readability of the code will be achieved if you use Docscrings. On the other hand, static typing helps more than just improving readability and provides usefull warning messages if something seems off. One option to use is the Google docstring format and the typing library included by default in Python. An example is presented below.
+Improved readability of the code is achieved if you use Docstrings. On the other hand, static typing helps more than just improving readability and provides useful warning messages if something seems off. One option is to use the Google docstring format and the typing library included by default in Python. An example is presented below. 
 
 ```
 from typing import List, Dict
@@ -70,7 +71,7 @@ Furthermore the `typing` library supports all kind of types such as ```Dict```, 
 
 ### Logging vs printing
 
-The only scenario where ```print("Something")``` should be done is in the top level python files. Otherwise, logging should be used. The logging is included in the default
+The only scenario where ```print("Something")``` should be done is in the Python scripts. Otherwise, logging should be used. The logging is included in the default
 Python library. The logging package has a lot of useful features:
 
  - Easy to see where and when (even what line no.) a logging call is being made from.
@@ -80,14 +81,14 @@ Python library. The logging package has a lot of useful features:
 
 [Stackoverlow source](https://stackoverflow.com/questions/6918493/in-python-why-use-logging-instead-of-print) about printing vs logging.
 
-### Virual environments
+### Virtual environments
 
-- In the future I would suggest that you install [Poetry](https://poetry.eustace.io/). Poetry helps you manage your virtual enviroments in Python and serves as a dependency resolver. Assuming that you installed `poetry` for this project, navigate to the cloned directory and run `poetry install`. Then, `poetry` will set up an identical virtual environment for you as the one I have for this project. Several commands to keep in mind about `poetry`:
+- In the future I would suggest that you install [Poetry](https://poetry.eustace.io/). Poetry helps you manage your virtual environments in Python and serves as a dependency resolver. In case you decide to use Poetry for this project, let me know and I will push the necessary files for you to replicate the virtual environment with Poetry. Assuming that you installed `poetry` for this project and I pushed the files, navigate to the cloned directory and run `poetry install`. Then, `poetry` will set up an identical virtual environment as the one I have for this project. Several commands to keep in mind about `poetry`:
 
 - `poetry add package_name` to install a package.
 - `poetry remove package_name` to remove a package.
 - `poetry init` to create a new project (this will set up a `pyproject.toml` file for you where all dependencies will be listed).
-- `poetry lock` it will resolve all your dependencies and create a a `poetry.lock` file that you SHOULD keep in version control.
+- `poetry lock` it will resolve all your dependencies and create a `poetry.lock` file that you SHOULD keep in version control.
 - `poetry run python script1.py` to execute a Python script using Python from inside the virtual environment.
 
 
