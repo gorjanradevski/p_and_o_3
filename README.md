@@ -6,22 +6,25 @@ The purpose of this project/tutorial is to help you get going with Python and im
 - Have Python >= 3.6.5 installed.
 - Clone the repository on your local machine.
 - Install `virtualenv` by running `pip install virtualenv`. A [good video](https://www.youtube.com/watch?v=N5vscPTWKOk&feature=youtu.be&t=112) about what virtual environments are and `virtualenv` in particular. Make sure to go through the video before proceeding.
-- Create a new virtual environments for this project by running `virtualenv p_and_o_3`.
-- To activate the virtual environments run `source p_and_o_3/bin/activate`. Now, you are inside your new Python virtual environment. 
+- Create a new virtual environment for this project by running `virtualenv p_and_o_3`.
+- To activate the virtual environment run `source p_and_o_3/bin/activate`. Now, you are inside your new Python virtual environment. 
 - To install all the required packages run `pip install -r requirements.txt`. If you did everything successfully up to this point you have an identical virtual environment as I have on my local machine.
 - In case you want to exit the virtual environment run `deactivate`.
-- Finally, if you want to see an alternative practice (The one I use to deal with my Python dependencies and virtual environments go to section [virtual environments](#ve)).
+- Finally, if you want to see an alternative practice (The one I use to deal with my Python dependencies and virtual environments go to section [virtual environments](#Virtual-environments).
 
 ## Notebooks
 
-The Jupyter notebooks `tutorial_python.ipynb` and `tutorial_image_processing.ipynb` give you a brief overview of Python and image processing done in Python accordingly. 
+The Jupyter notebook `tutorial_python_image_processing.ipynb` gives you a brief overview of Python and image processing done in Python accordingly. To run `Jupyter`, from inside your virtual environment run `jupyter notebook`. This will open `Jupyter` in your browser and from there you can open the notebooks.
+
+
+## Final remarks
 
 
 For any questions, or if you have things that you think are missing, feel free to reach out to me on
 [gorjan.radevski@esat.kuleuven.be](mailto:gorjan.radevski@esat.kuleuven.be). For those interested, the sections below go through some Python practices that I try to stick to when working on my projects.
 
 
-## Folder structure
+### Folder structure
 Python files that are in the top most level in the sources directory are treated as scripts (should implement a `__main__` method) and can be run (using `python script1.py`). All other python files that are further down in the sources directory should be packed as packages and imported in the scripts as modules. An example is presented below.
 
 ```
@@ -39,7 +42,7 @@ src/
          -- module3.py
 ```
 
-## Docstrings and static typing
+### Docstrings and static typing
 Improved readability of the code will be achieved if you use Docscrings. On the other hand, static typing helps more than just improving readability and provides usefull warning messages if something seems off. One option to use is the Google docstring format and the typing library included by default in Python. An example is presented below.
 
 ```
@@ -65,7 +68,7 @@ def function(arg1: List[int], arg2: str) -> Dict[str, int]:
 ```
 Furthermore the `typing` library supports all kind of types such as ```Dict```, ```Tuple```, ```Set```, ```Union``` and so on.
 
-## Logging vs printing
+### Logging vs printing
 
 The only scenario where ```print("Something")``` should be done is in the top level python files. Otherwise, logging should be used. The logging is included in the default
 Python library. The logging package has a lot of useful features:
@@ -77,7 +80,7 @@ Python library. The logging package has a lot of useful features:
 
 [Stackoverlow source](https://stackoverflow.com/questions/6918493/in-python-why-use-logging-instead-of-print) about printing vs logging.
 
-## Virual environments {#ve}
+### Virual environments
 
 - In the future I would suggest that you install [Poetry](https://poetry.eustace.io/). Poetry helps you manage your virtual enviroments in Python and serves as a dependency resolver. Assuming that you installed `poetry` for this project, navigate to the cloned directory and run `poetry install`. Then, `poetry` will set up an identical virtual environment for you as the one I have for this project. Several commands to keep in mind about `poetry`:
 
