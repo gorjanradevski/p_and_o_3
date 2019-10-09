@@ -10,22 +10,22 @@ The purpose of these guidelines is to help you get going with Python and image p
 - To activate the virtual environment run `source p_and_o_3/bin/activate`. Now, you are inside your new Python virtual environment. 
 - To install all the required packages run `pip install -r requirements.txt`. If you did everything successfully up to this point you have an identical virtual environment as I have on my local machine.
 - In case you want to exit the virtual environment run `deactivate`.
-- Finally, if you want to see an alternative practice (The one I use to deal with my Python dependencies and virtual environments go to section [virtual environments](#Virtual-environments).
+- Finally, if you want to see an alternative practice (The one I use to deal with my Python dependencies and virtual environments) go to section [virtual environments](#Virtual-environments).
 
 ## Notebooks
 
-The Jupyter notebook `python_image_processing.ipynb` in the `notebooks/` directory gives you a brief overview of Python and image processing. To run the notebook, from inside your virtual environment run `jupyter notebook`. This will open `Jupyter` in your browser and from there you can navigate to the `notebooks/` directory and open the `python_image_processing.ipynb` notebook.
+The Jupyter notebook `python_image_processing.ipynb` in the `notebooks/` directory gives you a brief overview of Python and image processing. To run the notebook, from inside your virtual environment run `jupyter notebook`. This will open `jupyter` in your browser and from there you can navigate to the `notebooks/` directory and open the `python_image_processing.ipynb` notebook.
 
 
 ## Final remarks
 
 
-For any questions, or if you feel that something is not properly explained, feel free to reach out to me on
+For any questions or clarifications feel free to reach out to me on
 [gorjan.radevski@esat.kuleuven.be](mailto:gorjan.radevski@esat.kuleuven.be). For those interested, the sections below go through some Python practices that I try to stick to when working on my projects.
 
 
 ### Folder structure
-Python files that reside at the top-most level in the sources directory `src/` are treated as scripts (should implement a `__main__` method) and can be executed (e.g `python script.py`). All other Python files that are further down in the sources directory should be packed as packages and imported in the scripts as modules. An example is presented below.
+Python files that reside at the top-most level in the sources directory `src/` are treated as scripts (should implement a `__main__` method) and can be executed (e.g `python script.py`). All other Python files that are further down in the sources directory should be packed as packages and imported as modules. An example is presented below.
 
 ```
 data/
