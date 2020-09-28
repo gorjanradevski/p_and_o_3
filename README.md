@@ -1,5 +1,5 @@
 # P&O3 Python and image processing guidelines
-The purpose of these guidelines is to help you get going with Python and image processing.
+This repository is intended to provide basic introduction and guidelines to the students of the P&O3 project at KU Leuven. These guidelines is to help you get going with Python and image processing.
 
 ## Prerequisites
 
