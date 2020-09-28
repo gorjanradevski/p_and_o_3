@@ -1,6 +1,6 @@
 # P&O3 Python and image processing guidelines
 
-This repository is intended to provide basic introduction and guidelines to the students of the P&O3 project at KU Leuven. These guidelines are meant to help you get going with Python and image processing.
+This repository is intended to provide basic introduction and guidelines for the P&O3 project at KU Leuven. These guidelines are meant to help you get going with Python and image processing.
 
 ## Prerequisites
 
@@ -108,10 +108,3 @@ I personally use VS Code, and I suggest that you should use it as well. You can 
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) or [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint); for writting and editting markdown files e.g., READMEs.
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow); clearer indentation.
 - Any others?
-
-### Usefull command line tools
-
-There are a plethora of tools that you can find online, however two of my favorite are:
-
-- [fzf](https://github.com/junegunn/fzf); This one is a must. It provides a better experience when using the reverse search (Ctrl+R) on your command line.
-- [bat](https://github.com/sharkdp/bat); `cat` with syntax highlighting.
