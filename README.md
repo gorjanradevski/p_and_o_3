@@ -20,7 +20,7 @@ The Jupyter notebook `python_image_processing.ipynb` in the `notebooks/` directo
 ## Final remarks
 
 For any questions or clarifications feel free to reach out to me on
-[gorjan.radevski@esat.kuleuven.be](mailto:gorjan.radevski@esat.kuleuven.be). If you have any suggestion that you think might be usefull for other students as well and you think it needs to be added to the repository feel free to create an Github issue (sending me an email will suffice as well but and issue is preferred). For those interested, the sections below go through some Python practices that I try to stick to when working on my projects.
+[gorjan.radevski@esat.kuleuven.be](mailto:gorjan.radevski@esat.kuleuven.be). If you have any suggestion that you think might be usefull for other students as well and you think it needs to be added to the repository feel free to create an Github issue (sending me an email will suffice as well but and issue is preferred). For those interested, the sections below go through some coding practices that I try to stick to when working on my projects.
 
 ### Folder structure
 
@@ -75,10 +75,10 @@ Furthermore the `typing` library supports all kind of types such as ```Dict```, 
 The only scenario where ```print("Something")``` should be done is in the Python scripts. Otherwise, logging should be used. The logging is included in the default
 Python library. The logging package has a lot of useful features:
 
- - Easy to see where and when (even what line no.) a logging call is being made from.
- - You can log to files, sockets, pretty much anything, all at the same time.
- - You can differentiate your logging based on severity.
- - Print doesn't have any of these.
+- Easy to see where and when (even what line no.) a logging call is being made from.
+- You can log to files, sockets, pretty much anything, all at the same time.
+- You can differentiate your logging based on severity.
+- Print doesn't have any of these.
 
 [Stackoverlow source](https://stackoverflow.com/questions/6918493/in-python-why-use-logging-instead-of-print) about printing vs logging.
 
@@ -88,13 +88,15 @@ I would suggest that you all install [Black](https://github.com/psf/black) and [
 
 ### Virtual environments
 
-In the future I would suggest that you install [Poetry](https://poetry.eustace.io/). Poetry helps you manage your virtual environments in Python and serves as a dependency resolver. In case you decide to use Poetry for this project, let me know and I will push the necessary files for you to replicate the virtual environment with Poetry. Assuming that you installed `poetry` for this project and I pushed the files, navigate to the cloned directory and run `poetry install`. Then, `poetry` will set up an identical virtual environment as the one I have for this project. Several commands to keep in mind about `poetry`:
+In the future I would suggest that you install [Poetry](https://python-poetry.org/). Poetry helps you manage your virtual environments in Python and serves as a dependency resolver. In case you decide to use Poetry for this project, let me know and I will push the necessary files for you to replicate the virtual environment with Poetry. Assuming that you installed `poetry` for this project and I pushed the files, navigate to the cloned directory and run `poetry install`. Then, `poetry` will set up an identical virtual environment as the one I have for this project. Several commands to keep in mind about `poetry`:
 
 - `poetry add package_name` to install a package.
 - `poetry remove package_name` to remove a package.
 - `poetry init` to create a new project (this will set up a `pyproject.toml` file for you where all dependencies will be listed).
 - `poetry lock` it will resolve all your dependencies and create a `poetry.lock` file that you SHOULD keep in version control.
 - `poetry run python script1.py` to execute a Python script using Python from inside the virtual environment.
+
+Installation instructions, all basic and advanced commands, and more information about Poetry can be found [here](https://python-poetry.org/docs/).
 
 ### Code edittor
 
@@ -106,3 +108,10 @@ I personally use VS Code, and I suggest that you should use it as well. You can 
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) or [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint); for writting and editting markdown files e.g., READMEs.
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow); clearer indentation.
 - Any others?
+
+### Usefull command line tools
+
+There are a plethora of tools that you can find online, however two of my favorite are:
+
+- [fzf](https://github.com/junegunn/fzf); This one is a must. It provides a better experience when using the reverse search (Ctrl+R) on your command line.
+- [bat](https://github.com/sharkdp/bat); `cat` with syntax highlighting.
