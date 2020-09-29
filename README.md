@@ -4,11 +4,16 @@ This repository is intended to provide basic introduction and guidelines for the
 
 ## Prerequisites
 
-- Have Python >= 3.6.5 installed.
-- Clone the repository on your local machine.
-- Install `virtualenv` by running `pip install virtualenv`. A [good video](https://www.youtube.com/watch?v=N5vscPTWKOk&feature=youtu.be&t=112) about what virtual environments are and `virtualenv` in particular. Make sure to go through the video before proceeding.
-- Create a new virtual environment for this project by running `virtualenv p_and_o_3`.
-- To activate the virtual environment run `source p_and_o_3/bin/activate`. Now, you are inside your new Python virtual environment. 
+- Have basic knowledge about the command line (Windows) or terminal (Linux/MacOS).
+- Have `Python` >= 3.6.5, `git` and `pip` installed.
+- You can find installation instructions for git [here](https://git-scm.com/download/win), for pip [here](https://phoenixnap.com/kb/install-pip-windows).
+
+Now, you need to run all commands from the command line/terminal.
+
+- Clone the repository on your local machine by running `git clone https://github.com/gorjanradevski/KUL_PO3.git`
+- Install `virtualenv` by running `pip install virtualenv`. A [good video](https://www.youtube.com/watch?v=N5vscPTWKOk) about what virtual environments are and `virtualenv` in particular. Make sure to go through the video before proceeding.
+- Create a new virtual environment for this project by running `virtualenv kul_po3`.
+- To activate the virtual environment, on Linux/MacOS run `source kul_po3/bin/activate`. On Windows, this [link](https://www.liquidweb.com/kb/how-to-setup-a-python-virtual-environment-on-windows-10/) goes through the steps for activating a virtual environment. By now, you are inside your new Python virtual environment.
 - To install all the required packages run `pip install -r requirements.txt`. If you did everything successfully up to this point you have an identical virtual environment as I have on my local machine.
 - In case you want to exit the virtual environment run `deactivate`.
 - Finally, if you want to see an alternative practice (The one I use to deal with my Python dependencies and virtual environments) go to section [virtual environments](#Virtual-environments).
