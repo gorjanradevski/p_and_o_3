@@ -30,8 +30,8 @@ The Jupyter notebook `python_image_processing.ipynb` in the `notebooks/` directo
 
 ## Final remarks
 
-For any questions or clarifications feel free to reach out to me on
-[gorjan.radevski@esat.kuleuven.be](mailto:gorjan.radevski@esat.kuleuven.be), and add as a subject your group name. If you have any suggestion that you think might be usefull for other students as well and you think it needs to be added to the repository feel free to create an Github issue (sending me an email will suffice as well but and issue is preferred). For those interested, the sections below go through some coding practices that I try to stick to when working on my projects.
+For any questions or clarifications feel free to reach out to us on
+[gorjan.radevski@esat.kuleuven.be](mailto:gorjan.radevski@esat.kuleuven.be) or [dusan.grujicic@esat.kuleuven.be](mailto:dusan.grujicic@esat.kuleuven.be), and add as a subject P&O3-your_group_name. If you have any suggestion that you think might be usefull for other students as well and you think it needs to be added to the repository feel free to create an Github issue (sending me an email will suffice as well but and issue is preferred). For those interested, the sections below go through some coding practices that I try to stick to when working on my projects.
 
 ### Folder structure
 
