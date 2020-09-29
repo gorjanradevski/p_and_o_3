@@ -4,9 +4,9 @@ This repository is intended to provide basic introduction and guidelines for the
 
 ## Prerequisites
 
-You have two options to run the Jupyter Notebook that contains the guidelines to Python and image processing. You either need to follow the instructions provided [here](Cmd/Terminal-instructions) if you want to run things locally, you can access it from [Google Colab directly](https://colab.research.google.com/drive/1rBrwD5DPCKL7tMvH1ltowTVGNiCXW6zP). If you go for the Google Colab way, you can skip everything until section [final remarks](#Final-remarks).
+You have two options to run the Jupyter Notebook that contains the guidelines to Python and image processing. You either need to follow the instructions provided [here](Command-line-or-terminal-instructions) if you want to run things locally, you can access it from [Google Colab directly](https://colab.research.google.com/drive/1rBrwD5DPCKL7tMvH1ltowTVGNiCXW6zP). If you go for the Google Colab way, you can skip everything until section [final remarks](#Final-remarks).
 
-### Cmd/Terminal instructions
+### Command line or terminal instructions
 
 Before proceeding, if you use Pycharm this [link](https://www.jetbrains.com/help/pycharm/managing-dependencies.html#configure-requirements) might be of use. Open the cloned repository in Pycharm and follow the instructions provided in the link.
 
