@@ -6,6 +6,16 @@ This repository is intended to provide basic introduction and guidelines for the
 
 You have two options to run the Jupyter Notebook that contains the guidelines to Python and image processing. You either need to follow the instructions provided [here](#Command-line-or-terminal-instructions) if you want to run things locally, you can access it from [Google Colab directly](https://colab.research.google.com/drive/1rBrwD5DPCKL7tMvH1ltowTVGNiCXW6zP). If you go for the Google Colab way, you can skip everything until section [final remarks](#Final-remarks).
 
+### Installing Python on Linux/OSX/Windows
+
+I would suggest that you use [Pyenv](https://github.com/pyenv/pyenv) to manage your Python installations. Installing instructions for Pyenv on Linux/OSX can be found [here](https://github.com/pyenv/pyenv) while for Windows [here](https://github.com/pyenv-win/pyenv-win). If you already have Python installed on your PC, my suggestion would be to uninstall every Python installation you have and do it from scrach with Pyenv. It is really straight forward to use it. The basic commands are:
+
+- `pyenv install 3.8.5` to install a particular Python version, e.g., 3.8.5 in this case. Change the number to the version you want to install.
+- `pyenv versions` to list all Python versions you have installed on your PC.
+- `pyenv global 3.8.5` to set a Python version as default globally on your PC. Now if you type `python --version` it should output that the version is 3.8.5.
+- `pyenv local 3.8.5` to set a Python version as default in a particular directory/folder. It creates a `.python-version` file within the directory that indicates the default python that should be used within. For example you can have the global python set to 3.8.5, but if you type `pyenv local 3.8.7` within this directory (assuming that 3.8.7 is installed), and then type `python --version`, it will output that the version is 3.8.7, while outside of the directory it will be 3.8.5.
+- `pyenv uninstall 3.8.7` to uninstall a particular Python version.
+
 ### Command line or terminal instructions
 
 Before proceeding, if you use Pycharm this [link](https://www.jetbrains.com/help/pycharm/managing-dependencies.html#configure-requirements) might be of use. Open the cloned repository in Pycharm and follow the instructions provided in the link.
@@ -16,9 +26,9 @@ Before proceeding, if you use Pycharm this [link](https://www.jetbrains.com/help
 
 Now, you need to run all commands from the command line/terminal.
 
-- Clone the repository on your local machine by running `git clone https://github.com/gorjanradevski/KUL_PO3.git`
-- Install `virtualenv` by running `pip install virtualenv`. A [good video](https://www.youtube.com/watch?v=N5vscPTWKOk) about what virtual environments are and `virtualenv` in particular. Make sure to go through the video before proceeding.
-- Create a new virtual environment for this project by running `virtualenv kul_po3`.
+- Clone the repository on your local machine by executing `git clone https://github.com/gorjanradevski/KUL_PO3.git`
+- Install `virtualenv` by executing `pip install virtualenv`. A [good video](https://www.youtube.com/watch?v=N5vscPTWKOk) about what virtual environments are and `virtualenv` in particular. Make sure to go through the video before proceeding.
+- Create a new virtual environment for this project by executing `virtualenv kul_po3`.
 - To activate the virtual environment, on Linux/MacOS run `source kul_po3/bin/activate`. On Windows, this [link](https://www.liquidweb.com/kb/how-to-setup-a-python-virtual-environment-on-windows-10/) goes through the steps for activating a virtual environment. By now, you are inside your new Python virtual environment.
 - To install all the required packages run `pip install -r requirements.txt`. If you did everything successfully up to this point you have an identical virtual environment as I have on my local machine.
 - In case you want to exit the virtual environment run `deactivate`.
