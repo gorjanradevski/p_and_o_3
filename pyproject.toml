@@ -8,7 +8,7 @@ authors = ["gorjanradevski <gorjanradevski@gmail.com>"]
 python = "^3.8"
 numpy = "^1.19.2"
 jupyter = "^1.0.0"
-Pillow = "^7.2.0"
+Pillow = "^8.2.0"
 opencv-python = "^4.4.0"
 matplotlib = "^3.3.2"
 
